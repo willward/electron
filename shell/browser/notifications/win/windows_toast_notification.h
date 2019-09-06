@@ -66,6 +66,7 @@ class WindowsToastNotification : public Notification {
       const bool silent,
       ABI::Windows::Data::Xml::Dom::IXmlDocument** toastXml);
   bool SetXmlAudioSilent(ABI::Windows::Data::Xml::Dom::IXmlDocument* doc);
+  bool SetXmlScenarioReminder(ABI::Windows::Data::Xml::Dom::IXmlDocument* doc);
   bool SetXmlText(ABI::Windows::Data::Xml::Dom::IXmlDocument* doc,
                   const std::wstring& text);
   bool SetXmlText(ABI::Windows::Data::Xml::Dom::IXmlDocument* doc,

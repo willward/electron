@@ -35,7 +35,7 @@ Returns `Boolean` - Whether or not desktop notifications are supported on the cu
   * `silent` Boolean (optional) - Whether or not to emit an OS notification noise when showing the notification.
   * `icon` (String | [NativeImage](native-image.md)) (optional) - An icon to use in the notification.
   * `hasReply` Boolean (optional) _macOS_ - Whether or not to add an inline reply option to the notification.
-  * `timeoutType` String (optional) _Linux_ - The timeout duration of the notification.
+  * `timeoutType` String (optional) _Linux_ _Windows_ - The timeout duration of the notification. Can be 'default' or 'never'.
   * `replyPlaceholder` String (optional) _macOS_ - The placeholder to write in the inline reply input field.
   * `sound` String (optional) _macOS_ - The name of the sound file to play when the notification is shown.
   * `actions` [NotificationAction[]](structures/notification-action.md) (optional) _macOS_ - Actions to add to the notification. Please read the available actions and limitations in the `NotificationAction` documentation.
@@ -145,7 +145,7 @@ A `Boolean` property representing whether the notification is silent.
 
 A `Boolean` property representing whether the notification has a reply action.
 
-#### `notification.timeoutType` _Linux_
+#### `notification.timeoutType` _Linux_ _Windows_
 
 A `String` property representing the type of timeout duration for the notification. Can be 'default' or 'never'.
 
