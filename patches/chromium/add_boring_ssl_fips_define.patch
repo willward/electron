@@ -1,0 +1,14 @@
+
+
+diff --git a/third_party/boringssl/BUILD.gn b/third_party/boringssl/BUILD.gn
+index 6399d955196f..fab91cb2df85 100644
+--- a/third_party/boringssl/BUILD.gn
++++ b/third_party/boringssl/BUILD.gn
+@@ -25,6 +25,7 @@ config("internal_config") {
+     "BORINGSSL_ALLOW_CXX_RUNTIME",
+     "BORINGSSL_IMPLEMENTATION",
+     "BORINGSSL_NO_STATIC_INITIALIZER",
++    "BORINGSSL_FIPS",
+     "OPENSSL_SMALL",
+   ]
+   configs = [
